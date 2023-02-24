@@ -8,19 +8,19 @@ Changes made:
 1. In User_Setup.h
 
 activate
-#define DISABLE_ALL_LIBRARY_WARNINGS
+- #define DISABLE_ALL_LIBRARY_WARNINGS
 
 deactivate
-#define ILI9341_DRIVER
-#define TFT_DC   PIN_D3
-#define TFT_RST  PIN_D4 
+- #define ILI9341_DRIVER
+- #define TFT_DC   PIN_D3
+- #define TFT_RST  PIN_D4 
 
 
 --------------------------------------------------------
 2. User_Setup_Select.h
 
 activate
-#include <User_Setups/Setup206_LilyGo_T_Display_S3.h>
+- #include <User_Setups/Setup206_LilyGo_T_Display_S3.h>
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
