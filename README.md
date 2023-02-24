@@ -1,3 +1,28 @@
+Changed this Lib in oder to work with LilyGo_T_Display_S3.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Changes made:
+
+1. In User_Setup.h
+
+activate
+#define DISABLE_ALL_LIBRARY_WARNINGS
+
+deactivate
+#define ILI9341_DRIVER
+#define TFT_DC   PIN_D3
+#define TFT_RST  PIN_D4 
+
+
+--------------------------------------------------------
+2. <User_Setup_Select.h>
+
+activate
+#include <User_Setups/Setup206_LilyGo_T_Display_S3.h>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 A ["Discussions"](https://github.com/Bodmer/TFT_eSPI/discussions) facility has been added for Q&A etc. Use the ["Issues"](https://github.com/Bodmer/TFT_eSPI/issues) tab only for problems with the library. Thanks!
 # News
 1. New functions have been added to draw smooth (antialiased) arcs, circles, and rounded rectangle outlines. New sketches are provided in the "Smooth Graphics" examples folder. Arcs can be drawn with or without anti-aliasing (which will then render faster). The arc ends can be straight or rounded. The arc drawing algorithm uses an optimised fixed point sqrt() function to improve performance on processors that do not have a hardware Floating Point Unit (e.g. RP2040). Here are two demo images, on the left smooth (anti-aliased) arcs with rounded ends, the image to the right is the same resolution (grabbed from the same 240x240 TFT) with the smoothing diasbled (no anti-aliasing):
