@@ -2,6 +2,7 @@ Changed this Lib in oder to work with LilyGo_T_Display_S3.
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Changes made:
 
 1. In User_Setup.h
@@ -16,12 +17,23 @@ deactivate
 
 
 --------------------------------------------------------
-2. <User_Setup_Select.h>
+2. User_Setup_Select.h
 
 activate
 #include <User_Setups/Setup206_LilyGo_T_Display_S3.h>
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
 
 A ["Discussions"](https://github.com/Bodmer/TFT_eSPI/discussions) facility has been added for Q&A etc. Use the ["Issues"](https://github.com/Bodmer/TFT_eSPI/issues) tab only for problems with the library. Thanks!
 # News
